@@ -754,7 +754,6 @@ void CGUIWindowMusicBase::AddItemToPlayList(const CFileItemPtr &pItem, CFileItem
       if (!itemCheck || itemCheck->m_lStartOffset != pItem->m_lStartOffset)
       { // add item
         CFileItemPtr item(new CFileItem(*pItem));
-        m_musicdatabase.SetPropertiesForFileItem(*item);
         queuedItems.Add(item);
       }
     }
